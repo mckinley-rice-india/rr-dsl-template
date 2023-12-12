@@ -2,8 +2,8 @@ service: docker-selenium-lambda
 
 provider:
   name: aws
-  stage: ${opt:stage, 'prod'}
-  region: ${env:AWS_REGION, 'us-east-1'}
+  stage: ${opt:stage, 'dev'}
+  region: ${env:AWS_REGION, 'ap-south-1'}
   ecr:
     images:
       img:
